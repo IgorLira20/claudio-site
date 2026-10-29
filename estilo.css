@@ -1,0 +1,59 @@
+:root {
+  --fundo: #f7f6f2;
+  --texto: #22211d;
+  --apoio: #5b584f;
+  --destaque: #1f5f8b;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #191a1c;
+    --texto: #e9e7e1;
+    --apoio: #aeaba3;
+    --destaque: #8cc2e8;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 1.0625rem/1.6 Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 32px 0 8px;
+  font-size: 1.25rem;
+}
+
+p,
+ul {
+  margin: 0 0 16px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.apoio {
+  color: var(--apoio);
+}
+
+a {
+  color: var(--destaque);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
